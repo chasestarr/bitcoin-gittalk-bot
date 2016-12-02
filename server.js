@@ -47,8 +47,5 @@ function postToGitTalk(outbound, cb) {
   });
 }
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
 app.listen(8003, () => console.log('server listening on port 8003'));
+
