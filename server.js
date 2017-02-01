@@ -25,6 +25,7 @@ function makeCoindeskRequest(room, cb) {
     if (err) return cb(err, null);
     const data = JSON.parse(body);
     const date = data.time.updated;
+
     const price = data.bpi.USD.rate;
     const outbound = {
       apiKey: '688b32f2675d0e03d2e0696a74237702',
